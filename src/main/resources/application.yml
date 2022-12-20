@@ -11,10 +11,17 @@ spring:
       matching-strategy: ant_path_matcher
   messages:
     basename: messages
-  security:
-    user:
-      name: sung
-      password: pass1234
+#  security:
+#    user:
+#      name: sung
+#      password: pass1234
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+  h2:
+    console:
+      enabled: true
 
 management:
   endpoints:
